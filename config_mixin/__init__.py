@@ -1,3 +1,5 @@
+__version__ = "1.0.0"
+
 import collections
 import glob
 import json
@@ -6,12 +8,16 @@ import os
 import yaml
 from munch import Munch
 
-from config_probe.exceptions import ConfigNotFound
+from config_mixin.exceptions import ConfigNotFound
 
 NAMESPACE_PLACEHOLDER = "(*)"
 
 
 def probe(path, patterns):
+    return mixin(path, patterns)
+
+
+def mixin(path, patterns):
     config = {}
 
     for pattern in patterns:
