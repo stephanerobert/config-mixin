@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "config_mixin"
+name = "config-mixin"
 dynamic = ["version"]
 description = "Provide an auto-discovery process for configurations"
 readme = "README.md"
