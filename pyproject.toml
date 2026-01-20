@@ -7,7 +7,7 @@ name = "config_mixin"
 dynamic = ["version"]
 description = "Provide an auto-discovery process for configurations"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 license = {text = "License :: OSI Approved :: Apache Software License"}
 classifiers = [
     "Intended Audience :: Developers",
